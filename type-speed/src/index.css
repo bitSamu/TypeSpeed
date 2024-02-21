@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Override Bootstrap styling for input elements */
+.form-control {
+    color: #000; /* Set text color to black */
+  }
