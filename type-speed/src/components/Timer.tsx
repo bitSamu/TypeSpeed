@@ -1,5 +1,6 @@
 // Timer component
 import React, { useState, useEffect } from "react";
+import "../style/Timer.css"; // Import der CSS-Datei
 
 interface TimerProps {
   isRunning: boolean;
@@ -28,7 +29,7 @@ const Timer = ({ isRunning, stopTimer }: TimerProps) => {
 
   return (
     <div className="h-56 grid grid-cols-1 gap-4 content-center ...">
-      <div>{counter}</div>
+      <div className="counter-style">{counter}</div>
     </div>
   );
 };
